@@ -781,6 +781,18 @@
     ]
   },
   {
+    "id": "icon-block",
+    "fields": [
+      {
+        "component": "boolean",
+        "valueType": "boolean",
+        "name": "allow-center",
+        "label": "Center align this section?",
+        "description": "This will center the entire Icon Cards Block."
+      }
+    ]
+  },
+  {
     "id": "columns",
     "fields": [
       {
