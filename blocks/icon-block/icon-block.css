@@ -1,19 +1,23 @@
 .icon-block {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Default alignment to flex-start */
+  gap: 32px;
   min-width: 320px;
   text-align: center;
   margin: 0 auto;
-  gap: 32px;
   min-height: 208px;
 }
 .icon-block > div {
-  max-width: 283px;
-  min-height: 147.95px;
-  margin: 0 auto;
+  flex: 1 1 286px; /* Adjust base width as needed */
+  max-width: 286px;
+  min-height: 180px;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
 .icon-block > div > div img {
   width: 50px;
@@ -75,12 +79,15 @@
 
 @media (min-width: 600px) {
   .icon-block {
-    grid-template-columns: repeat(auto-fit, minmax(286px, 1fr));
-    column-gap: 24px;
+    gap: 24px; /* Adjust gap between items */
     max-width: 596px;
+    justify-content: space-between;
   }
   .icon-block > div {
+    /* flex: 1 1 286px; */
     max-width: 286px;
+    flex: 1 1 233px;
+    /* max-width: 249px; */
     min-height: 180px;
   }
   .icon-block .icon-description {
@@ -89,25 +96,17 @@
 }
 @media (min-width: 900px) {
   .icon-block {
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    column-gap: 24px;
+    gap: 24px; /* Adjust gap between items */
     max-width: 1278px;
   }
   .icon-block > div {
+    flex: 1 1 230px;
     max-width: 230px;
     min-height: 180px;
   }
+
    body[class ^= 'browse-'] .icon-block,
    body[class ^= 'article-'] .icon-block {
     max-width: none;
    }
-  .icon-block-center-align {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 36px;
-  }
-  .icon-block-center-align > div {
-    flex: 1 1 230px;
-  }
 }
