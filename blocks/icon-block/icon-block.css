@@ -1,14 +1,15 @@
 .icon-block {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  min-width: 320px;
   text-align: center;
+  margin: 0 auto;
   gap: 32px;
   min-height: 208px;
 }
 .icon-block > div {
-  margin: 0 auto;
-  width: 320px;
+  max-width: 283px;
   min-height: 147.95px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,21 +72,16 @@
 .icon-block .icon-new-tab svg {
   fill: var(--non-spectrum-navy-blue);
 }
- 
+
 @media (min-width: 600px) {
-  .icon-block-wrapper {
-    display: flex;
-    justify-content: center;
-  }
   .icon-block {
-    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(286px, 1fr));
+    column-gap: 24px;
     max-width: 596px;
   }
- 
   .icon-block > div {
-    max-width: 228px;
+    max-width: 286px;
     min-height: 180px;
-    margin: 0;
   }
   .icon-block .icon-description {
     min-height: 53px;
@@ -93,15 +89,25 @@
 }
 @media (min-width: 900px) {
   .icon-block {
-    max-width: 748px;
-    justify-content: flex-start;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    column-gap: 24px;
+    max-width: 1278px;
   }
   .icon-block > div {
+    max-width: 230px;
     min-height: 180px;
+  } 
+  body[class ^= 'browse-'] .icon-block,
+  body[class ^= 'article-'] .icon-block {
+  max-width: none;
   }
- 
-   body[class ^= 'browse-'] .icon-block,
-   body[class ^= 'article-'] .icon-block {
-    max-width: none;
-   }
+  .icon-block-center-align {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+  .icon-block-center-align > div {
+    width: 230px;
+  }
 }
