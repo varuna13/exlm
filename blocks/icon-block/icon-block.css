@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
 .icon-block > div > div img {
@@ -98,6 +98,7 @@
   .icon-block {
     gap: 24px; /* Adjust gap between items */
     max-width: 1278px;
+    justify-content: center;
   }
   .icon-block > div {
     flex: 1 1 230px;
