@@ -98,7 +98,7 @@
   .icon-block {
     gap: 24px; /* Adjust gap between items */
     max-width: 1278px;
-    justify-content: center;
+    justify-content: space-between;
   }
   .icon-block > div {
     flex: 1 1 230px;
