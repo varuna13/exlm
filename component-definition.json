@@ -216,6 +216,53 @@
           }
         },
         {
+          "title": "Accordion Container",
+          "id": "accordion-container",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "filter": "accordion-container",
+                  "name": "Accordion Container",
+                  "model": "accordion-container",
+                  "item1": {
+                    "sling:resourceType": "core/franklin/components/block/v1/block/item",
+                    "name": "Accordion Item",
+                    "model": "accordion-item",
+                    "accLabel": "Accordion Title",
+                    "accDescription": "Default description"
+                  },
+                  "item2": {
+                    "sling:resourceType": "core/franklin/components/block/v1/block/item",
+                    "name": "Accordion Item",
+                    "model": "accordion-item",
+                    "accLabel": "Accordion Title",
+                    "accDescription": "Default description"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Accordion Item",
+          "id": "accordion-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Accordion Item",
+                  "model": "accordion-item",
+                  "accLabel": "Accordion Title",
+                  "accDescription": "Default description"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Carousel Slide",
           "id": "carousel-slide",
           "plugins": {

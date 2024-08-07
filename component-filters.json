@@ -53,7 +53,8 @@
       "callout",
       "featured-authors",
       "inline-survey",
-      "carousel-block"
+      "carousel-block",
+      "accordion-container"
     ]
   },
   {
@@ -208,5 +209,9 @@
   {
     "id": "carousel-block",
     "components": ["carousel-slide"]
+  },
+  {
+    "id": "accordion-container",
+    "components": ["accordion-item"]
   }
 ]

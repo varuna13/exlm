@@ -695,6 +695,7 @@
       }
     ]
   },
+  
   {
     "id": "icon-card",
     "fields": [
@@ -801,6 +802,28 @@
       }
     ]
   },
+  {
+    "id": "accordion-item",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "accLabel",
+        "value": "",
+        "label": "Label",
+        "description": "Add title to the Accordion"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "accDescription",
+        "value": "",
+        "label": "Description",
+        "description": "Add Description to the Accordion"
+      }
+    ]
+  },
+  
   {
     "id": "columns",
     "fields": [
