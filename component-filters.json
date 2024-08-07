@@ -204,5 +204,9 @@
   {
     "id": "tab",
     "components": ["tab"]
+  },
+  {
+    "id": "carousel-block",
+    "components": ["carousel-slide"]
   }
 ]
