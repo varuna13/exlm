@@ -2,6 +2,7 @@ import { fetchLanguagePlaceholders } from '../../scripts/scripts.js';
 
 function updateActiveSlide(slide) {
   const block = slide.closest('.carousel-block');
+  console.log(block);
   const slideIndex = parseInt(slide.dataset.slideIndex, 10);
   block.dataset.activeSlide = slideIndex;
 
