@@ -781,6 +781,27 @@
     ]
   },
   {
+    "id": "carousel-slide",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "slideImage",
+        "label": "Slide",
+        "description": "Add Image to the slide",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "slideDescription",
+        "value": "",
+        "label": "Description",
+        "description": "Add Desecription to the slide"
+      }
+    ]
+  },
+  {
     "id": "columns",
     "fields": [
       {

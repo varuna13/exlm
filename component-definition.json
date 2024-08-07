@@ -186,6 +186,53 @@
       "id": "blocks",
       "components": [
         {
+          "title": "Carousel Block",
+          "id": "carousel-block",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "filter": "carousel-block",
+                  "name": "Carousel Block",
+                  "model": "carousel-block",
+                  "item1": {
+                    "sling:resourceType": "core/franklin/components/block/v1/block/item",
+                    "name": "Carousel Slide",
+                    "model": "carousel-slide",
+                    "slideImage": "/content/dam/exlm/icons/S_ExperienceManager_24_N.svg",
+                    "slideDescription": "Default description"
+                  },
+                  "item2": {
+                    "sling:resourceType": "core/franklin/components/block/v1/block/item",
+                    "name": "Carousel Slide",
+                    "model": "carousel-slide",
+                    "slideImage": "/content/dam/exlm/icons/S_ExperienceManager_24_N.svg",
+                    "slideDescription": "Default description"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Carousel Slide",
+          "id": "carousel-slide",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Carousel Slide",
+                  "model": "carousel-slide",
+                  "slideImage": "/content/dam/exlm/icons/S_ExperienceManager_24_N.svg",
+                  "slideDescription": "Default description"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Icon Block",
           "id": "icon-block",
           "plugins": {
