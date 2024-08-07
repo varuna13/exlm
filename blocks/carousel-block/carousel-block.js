@@ -96,6 +96,7 @@ export default async function decorate(block) {
   carouselId += 1;
   block.setAttribute('id', `carousel-${carouselId}`);
   const rows = block.querySelectorAll(':scope > div');
+  console.log(rows);
   const isSingleSlide = rows.length < 2;
 
   const placeholders = await fetchLanguagePlaceholders();
