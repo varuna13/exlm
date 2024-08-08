@@ -11,8 +11,8 @@ export default function decorate(block) {
       // decorate accordion item
       const details = document.createElement('details');
       details.className = 'accordion-item';
-    //   details.append(summary, body);
-    //   row.replaceWith(details);
-    //   row.textContent = '';
+      details.append(summary, body);
+      row.textContent = '';
+      row.append(details);
     });
   }
