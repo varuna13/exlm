@@ -823,7 +823,25 @@
       }
     ]
   },
-  
+  {
+    "id": "embed",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "fileReference",
+        "label": "Image",
+        "description": "The media image"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "link",
+        "value": "",
+        "label": "Provide Embed Link"
+      }
+    ]
+  },
   {
     "id": "columns",
     "fields": [
