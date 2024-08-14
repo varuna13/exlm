@@ -1,6 +1,6 @@
 .icon-block {
   display: grid;
-  min-width: 320px;
+  min-width: 275px;
   text-align: center;
   margin: 0 auto;
   gap: 32px;
@@ -109,6 +109,5 @@
   }
   .icon-block-center-align > div {
     width: 230px;
-    margin: 0 35px;
   }
 }
