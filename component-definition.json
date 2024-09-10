@@ -1161,7 +1161,7 @@
                   "model": "announcement-ribbon",
                   "title": "Announcement Ribbon Title",
                   "titleType": "h3",
-                  "Description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt"
+                  "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt"
                 }
               }
             }
