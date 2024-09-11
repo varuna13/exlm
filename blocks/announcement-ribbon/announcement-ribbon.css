@@ -1,0 +1,88 @@
+/* Mobile First (default styles for <600px) */
+.announcement-ribbon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #f8f8f8;
+    border: 1px solid #e5e5e5;
+    padding: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .ribbon-text-content {
+    margin-bottom: 16px;
+  }
+  
+  .ribbon-heading h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .ribbon-description {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  .ribbon-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+  
+  .icon-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+  }
+  
+  /* Tablet view (600px to 899px) */
+  @media screen and (min-width: 600px) and (max-width: 899px) {
+    .announcement-ribbon {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+    }
+  
+    .ribbon-cta {
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 12px;
+      width: auto;
+    }
+  
+    .icon-close {
+      top: 20px;
+      right: 20px;
+    }
+  }
+  
+  /* Desktop view (>900px) */
+  @media screen and (min-width: 900px) {
+    .announcement-ribbon {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px 32px;
+    }
+  
+    .ribbon-text-content {
+      max-width: 60%;
+      margin-right: 16px;
+    }
+  
+    .ribbon-cta {
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 12px;
+    }
+  
+    .icon-close {
+      position: static;
+      margin-left: 16px;
+    }
+  }

@@ -1,16 +1,46 @@
-import { decorateButtons, decorateIcons } from "../../scripts/lib-franklin.js";
+import { decorateIcons } from "../../scripts/lib-franklin.js";
 
+function decorateButtons(...buttons) {
+  return buttons
+    .map((div) => {
+      const a = div.querySelector('a');
+      if (a) {
+        a.classList.add('button');
+        if (a.parentElement.tagName === 'EM') a.classList.add('secondary');
+        if (a.parentElement.tagName === 'STRONG') a.classList.add('primary');
+        return a.outerHTML;
+      }
+      return '';
+    })
+    .join('');
+}
 
-export default function decorate(block){
+export default function decorate(block) {
+  const [heading, description, firstCta, secondCta] = [...block.children].map(
+    (row) => row.firstElementChild
+  );
 
-    const [heading, description, cta1, cta2] = [...block.children];
-    heading?.classlist.add("announcement-ribbon-heading");
-    description?.classlist.add("announcement-ribbon-description");
-    decorateButtons(cta1);
-    decorateButtons(cta2);
-    const icon = document.createElement('span');
-    icon.classList.add("icon icon-close");
-    block.append(icon);
-    decorateIcons(block);
+  console.log(heading);
+  
+  heading?.classList.add("ribbon-heading");
+  description?.classList.add("ribbon-description");
 
+  // Correctly use `description.outerHTML`
+  const ribbonDOM = document.createRange().createContextualFragment(`
+    <div class="ribbon-text-content">
+      ${heading ? heading.outerHTML : ""}
+      ${description ? description.outerHTML : ""}
+    </div>
+    <div class="ribbon-cta">
+      ${decorateButtons(firstCta, secondCta)}
+    </div>
+    <span class="icon icon-close"></span>
+  `);
+
+  // Clear the block content and append the new structure
+  block.textContent = "";
+  block.append(ribbonDOM);
+
+  // Decorate icons
+  decorateIcons(block);
 }
