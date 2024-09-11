@@ -1,38 +1,46 @@
-/* Mobile First (default styles for <600px) */
+/* Mobile (<600px) */
 .announcement-ribbon {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: #f8f8f8;
-    border: 1px solid #e5e5e5;
-    padding: 16px;
+    background-color: var(--spectrum-gray-50);
+    border: 1px solid #d6d6d6;
+    border-radius: 8px 8px 8px 8px; 
+    padding: 16px ;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
   }
   
-  .ribbon-text-content {
-    margin-bottom: 16px;
+  .announcement-ribbon h1,h2,h3,h4,h5{
+    margin-top: 12px;
+    margin-bottom: 8px;
   }
+
   
-  .ribbon-heading h5 {
-    margin: 0;
-    font-size: 16px;
-    font-weight: bold;
+  .ribbon-text-content {
+    margin-bottom: 8px;
   }
   
   .ribbon-description {
     margin-top: 8px;
-    font-size: 14px;
-    line-height: 1.4;
+    font-size: 15px;
+    line-height: 19px;
   }
   
   .ribbon-cta {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 16px;
     width: 100%;
   }
+  .icon svg{
+  height: 16px;
+  width: 16px;
   
+}
+  .icon svg path{
+  fill: #000000;
+}
   .icon-close {
     position: absolute;
     top: 16px;
@@ -58,6 +66,7 @@
     .icon-close {
       top: 20px;
       right: 20px;
+      
     }
   }
   
@@ -67,22 +76,23 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      padding: 24px 32px;
+      padding: 16px 24px 16px 88px;
     }
   
     .ribbon-text-content {
       max-width: 60%;
-      margin-right: 16px;
     }
   
     .ribbon-cta {
       flex-direction: row;
       justify-content: flex-end;
-      gap: 12px;
+      gap: 16px;
     }
   
     .icon-close {
       position: static;
-      margin-left: 16px;
+      margin-left: 45px;
+      margin-right: 12px;
+      /*! height: 51px; */
     }
   }
