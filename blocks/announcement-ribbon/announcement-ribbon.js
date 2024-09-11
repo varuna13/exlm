@@ -14,13 +14,35 @@ function decorateButtons(...buttons) {
     })
     .join('');
 }
+function handleRibbonClose() {
+//   console.log("clicked");
+  const ribbonContainer = document.querySelector('.announcement-ribbon-container');
+  if (ribbonContainer) {
+    // Hide the ribbon container
+    ribbonContainer.style.display = 'none';
+    // Set session storage key to hide it across page loads
+    sessionStorage.setItem('hideRibbonBlock', true);
+  }
+}
+
+// Function to check session storage and hide the ribbon if it was previously closed
+function checkRibbonDisplay() {
+//   console.log("clicked");
+  const ribbonContainer = document.querySelector('.announcement-ribbon-container');
+  const isRibbonHidden = sessionStorage.getItem('hideRibbonBlock');
+
+  if (isRibbonHidden && ribbonContainer) {
+    // Hide the ribbon if session storage indicates it should be hidden
+    ribbonContainer.style.display = 'none';
+  }
+}
 
 export default function decorate(block) {
   const [heading, description, firstCta, secondCta] = [...block.children].map(
     (row) => row.firstElementChild
   );
 
-  console.log(heading);
+//   console.log(heading);
   
   heading?.classList.add("ribbon-heading");
   description?.classList.add("ribbon-description");
@@ -43,4 +65,11 @@ export default function decorate(block) {
 
   // Decorate icons
   decorateIcons(block);
+
+  // Add Event Listener
+  const closeIcon = block.querySelector('.icon-close');
+  if (closeIcon) {
+    closeIcon.addEventListener('click', handleRibbonClose); // Add click handler to close icon
+  }
+  checkRibbonDisplay();
 }
