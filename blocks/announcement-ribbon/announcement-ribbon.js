@@ -15,7 +15,7 @@ function decorateButtons(...buttons) {
     .join('');
 }
 
-// Function to hide a specific ribbon and update session storage
+// Function to hide a  ribbon and update session storage
 function hideRibbon(block) {
   block.style.display = 'none';
   sessionStorage.setItem(`hideRibbonBlock`, 'true');
@@ -36,7 +36,8 @@ export default async function decorate(block) {
   heading?.classList.add('ribbon-heading');
   description?.classList.add('ribbon-description');
 
-  const ribbonContent = document.createRange().createContextualFragment(`
+  const ribbonDom = document.createRange().createContextualFragment(`
+  <div class = "ribbon-content-container">
     <div class="ribbon-default-content">
       ${heading ? heading.outerHTML : ''}
       ${description ? description.outerHTML : ''}
@@ -44,11 +45,12 @@ export default async function decorate(block) {
     <div class="ribbon-button-container">
       ${decorateButtons(firstCta, secondCta)}
     </div>
+    </div>
     <span class="icon icon-close"></span>
   `);
 
   block.textContent = '';
-  block.append(ribbonContent);
+  block.append(ribbonDom);
 
   await decorateIcons(block);
 
