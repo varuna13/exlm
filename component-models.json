@@ -3594,6 +3594,21 @@
     "id": "announcement-ribbon",
     "fields": [
       {
+        "component": "reference",
+        "valueType": "string",
+        "name": "ribbonImage",
+        "label": "Ribbon Image",
+        "description": "Sets the Ribbon Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "ribbonImageAlt",
+        "label": "Ribbon Image Alt Text",
+        "description": "Sets the ribbon image's alternative text"
+      },
+      {
         "component": "text",
         "valueType": "string",
         "name": "title",
