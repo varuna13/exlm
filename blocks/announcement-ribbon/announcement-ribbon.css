@@ -4,7 +4,7 @@
   flex-direction: row;
   align-items: flex-start;
   background-color: var(--spectrum-gray-50);
-  border: 1px solid #d6d6d6;
+  border: 1px solid var(--non-spectrum-pale-grey);
   border-radius: 8px;
   padding: 24px;
 }
@@ -21,6 +21,7 @@
 
 .announcement-ribbon .ribbon-description {
   font-size: var(--spectrum-font-size-200);
+  color: var(--spectrum-gray-800);
   line-height: 19px;
 }
 
@@ -37,7 +38,7 @@
 }
 
 .announcement-ribbon .icon svg path {
-  fill: #000;
+  fill: var(--spectrum-gray-900);
 }
 
 .announcement-ribbon .icon-close {
@@ -92,7 +93,6 @@
   }
 
   .announcement-ribbon .icon-close {
-    position: static;
     margin: 0 12px 0 16px;
   }
 }
