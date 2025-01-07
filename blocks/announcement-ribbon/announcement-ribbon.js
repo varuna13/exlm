@@ -18,21 +18,13 @@ function decorateButtons(...buttons) {
 // Function to hide a  ribbon and update session storage
 function hideRibbon(block, storage) {
   block.style.display = 'none';
-  if(storage === "sessionStorage"){
-    sessionStorage.setItem(`hideRibbonBlock`,'true');
-  } else {
-    localStorage.setItem('hideRibbonBlock','true');
-  }
+  window[storage].setItem("hideRibbonBlock", "true");
   
 }
 
 // Function to check session storage and hide the ribbon if it was previously closed
 function isRibbonHidden(storage) {
-  if(storage === "sessionStorage"){
-    return sessionStorage.getItem('hideRibbonBlock') === 'true';
-  } else {
-    return localStorage.getItem('hideRibbonBlock') === 'true';
-  }
+  return window[storage].getItem("hideRibbonBlock") === "true";
   
 }
 
