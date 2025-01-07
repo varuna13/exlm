@@ -87,7 +87,7 @@ export default async function decorate(block) {
   ['.icon-close-black', '.icon-close-light'].forEach((selectedIcon) => {
     const closeIcon = block.querySelector(selectedIcon);
     if (closeIcon) {
-      closeIcon.addEventListener('click', () => hideRibbon(block, storage));
+      closeIcon.addEventListener('click', () => hideRibbon(block, storage.textContent));
     }
   });
 }
