@@ -4654,7 +4654,7 @@
       {
         "component": "radio-group",
         "name": "dismissalTime",
-        "value": "sessionStorage",
+        "value": "",
         "label": "Dismissal Time",
         "description": "Hide the banner based on Session or Local storage",
         "valueType": "string",
