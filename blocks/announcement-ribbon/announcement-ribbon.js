@@ -16,24 +16,36 @@ function decorateButtons(...buttons) {
 }
 
 // Function to hide a  ribbon and update session storage
-function hideRibbon(block) {
+function hideRibbon(block, storage) {
   block.style.display = 'none';
-  sessionStorage.setItem(`hideRibbonBlock`, 'true');
+  if(storage === "sessionStorage"){
+    sessionStorage.setItem(`hideRibbonBlock`,'true');
+  } else {
+    localStorage.setItem('hideRibbonBlock','true');
+  }
+  
 }
 
 // Function to check session storage and hide the ribbon if it was previously closed
-function isRibbonHidden() {
-  return sessionStorage.getItem('hideRibbonBlock') === 'true';
+function isRibbonHidden(storage) {
+  if(storage === "sessionStorage"){
+    return sessionStorage.getItem('hideRibbonBlock') === 'true';
+  } else {
+    return localStorage.getItem('hideRibbonBlock') === 'true';
+  }
+  
 }
 
 export default async function decorate(block) {
-  if (isRibbonHidden()) {
+ 
+  const [image, heading, description, bgColor, hexcode, firstCta, secondCta, storage] = [...block.children].map(
+    (row) => row.firstElementChild,
+  );
+
+   if (isRibbonHidden(storage.textContent)) {
     block.style.display = 'none';
     return;
   }
-  const [image, heading, description, bgColor, hexcode, firstCta, secondCta] = [...block.children].map(
-    (row) => row.firstElementChild,
-  );
 
   heading?.classList.add('ribbon-heading');
   description?.classList.add('ribbon-description');
@@ -82,8 +94,8 @@ export default async function decorate(block) {
   // Add close button functionality
   ['.icon-close-black', '.icon-close-light'].forEach((selectedIcon) => {
     const closeIcon = block.querySelector(selectedIcon);
-    if (closeIcon && !window.location.href.includes('.html')) {
-      closeIcon.addEventListener('click', () => hideRibbon(block));
+    if (closeIcon) {
+      closeIcon.addEventListener('click', () => hideRibbon(block, storage));
     }
   });
 }
