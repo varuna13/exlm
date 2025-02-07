@@ -439,6 +439,13 @@
         "multi": false
       },
       {
+        "component": "boolean",
+        "valueType": "boolean",
+        "name": "pop-out-subject-image",
+        "label": "Pop up the subject image",
+        "description": "Elevates the subject image above the background."
+      },
+      {
         "component": "text",
         "valueType": "string",
         "name": "subjectAlt",
