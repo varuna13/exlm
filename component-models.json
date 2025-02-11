@@ -4697,7 +4697,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "cta1_Text",
+        "name": "cta1_linkText",
         "value": "",
         "label": "First CTA Text",
         "description": "Text to be shown inside button."
@@ -4771,7 +4771,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "cta2_Text",
+        "name": "cta2_linkText",
         "value": "",
         "label": "Second CTA Text",
         "description": "Text to be shown inside button."
