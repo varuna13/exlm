@@ -4742,7 +4742,7 @@
         },
         "component": "text",
         "valueType": "string",
-        "name": "cta1_customHexCode",
+        "name": "cta2_customHexCode",
         "value": "",
         "label": "Custom Hexcode",
         "description": "Enter the custom hex code, such as FFFFFF (without the # symbol)."
