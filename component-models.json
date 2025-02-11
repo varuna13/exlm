@@ -4773,7 +4773,7 @@
         "valueType": "string",
         "name": "cta2_Text",
         "value": "",
-        "label": "First CTA Text",
+        "label": "Second CTA Text",
         "description": "Text to be shown inside button."
       },
       {
@@ -4781,7 +4781,7 @@
         "valueType": "string",
         "name": "cta2_link",
         "value": "",
-        "label": "First CTA Link",
+        "label": "Second CTA Link",
         "description": "What link to open when clicking the button."
       },
       {
