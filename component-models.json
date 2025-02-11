@@ -4664,7 +4664,7 @@
       },
        {
         "condition": {
-          "===": [{ "var": "cta1_type" }, "custom"]
+          "===": [{ "var": "cta1_Type" }, "custom"]
         },
         "component": "text",
         "valueType": "string",
@@ -4675,7 +4675,7 @@
       },
        {
         "condition": {
-          "===": [{ "var": "cta1_type" }, "custom"]
+          "===": [{ "var": "cta1_Type" }, "custom"]
         },
         "component": "select",
         "valueType": "string",
@@ -4738,7 +4738,7 @@
       },
        {
         "condition": {
-          "===": [{ "var": "cta2_type" }, "custom"]
+          "===": [{ "var": "cta2_Type" }, "custom"]
         },
         "component": "text",
         "valueType": "string",
@@ -4749,7 +4749,7 @@
       },
        {
         "condition": {
-          "===": [{ "var": "cta2_type" }, "custom"]
+          "===": [{ "var": "cta2_Type" }, "custom"]
         },
         "component": "select",
         "valueType": "string",
