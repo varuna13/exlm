@@ -4638,10 +4638,10 @@
       },
       {
         "component": "select",
-        "name": "cta1Type",
+        "name": "cta1_Type",
         "value": "primary",
         "label": "First CTA Type",
-        "description": "'Primary' will render button filled, 'Secondary' with an outline.",
+        "description": "",
         "valueType": "string",
         "options": [
           {
@@ -4651,13 +4651,53 @@
           {
             "name": "Secondary",
             "value": "secondary"
+          },
+           {
+            "name": "Tertiary",
+            "value": "tertiary"
+          },
+          {
+            "name": "Custom",
+            "value": "custom"
+          }
+        ]
+      },
+       {
+        "condition": {
+          "===": [{ "var": "cta1_type" }, "custom"]
+        },
+        "component": "text",
+        "valueType": "string",
+        "name": "cta1_customHexCode",
+        "value": "",
+        "label": "Custom Hexcode",
+        "description": "Enter the custom hex code, such as FFFFFF (without the # symbol)."
+      },
+       {
+        "condition": {
+          "===": [{ "var": "cta1_type" }, "custom"]
+        },
+        "component": "select",
+        "valueType": "string",
+        "name": "cta1_textColor",
+        "value": "white",
+        "label": "First CTA Text Color",
+        "description": "Select the text color",
+         "options": [
+          {
+            "name": "White",
+            "value": "white"
+          },
+          {
+            "name": "Black",
+            "value": "black"
           }
         ]
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "cta1Text",
+        "name": "cta1_Text",
         "value": "",
         "label": "First CTA Text",
         "description": "Text to be shown inside button."
@@ -4665,17 +4705,17 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "cta1",
+        "name": "cta1_link",
         "value": "",
         "label": "First CTA Link",
         "description": "What link to open when clicking the button."
       },
       {
         "component": "select",
-        "name": "cta2Type",
+        "name": "cta2_Type",
         "value": "primary",
-        "label": "Second CTA Type",
-        "description": "'Primary' will render button filled, 'Secondary' with an outline.",
+        "label": "First CTA Type",
+        "description": "",
         "valueType": "string",
         "options": [
           {
@@ -4685,23 +4725,63 @@
           {
             "name": "Secondary",
             "value": "secondary"
+          },
+           {
+            "name": "Tertiary",
+            "value": "tertiary"
+          },
+          {
+            "name": "Custom",
+            "value": "custom"
+          }
+        ]
+      },
+       {
+        "condition": {
+          "===": [{ "var": "cta2_type" }, "custom"]
+        },
+        "component": "text",
+        "valueType": "string",
+        "name": "cta1_customHexCode",
+        "value": "",
+        "label": "Custom Hexcode",
+        "description": "Enter the custom hex code, such as FFFFFF (without the # symbol)."
+      },
+       {
+        "condition": {
+          "===": [{ "var": "cta2_type" }, "custom"]
+        },
+        "component": "select",
+        "valueType": "string",
+        "name": "cta2_textColor",
+        "value": "white",
+        "label": "First CTA Text Color",
+        "description": "Select the text color",
+         "options": [
+          {
+            "name": "White",
+            "value": "white"
+          },
+          {
+            "name": "Black",
+            "value": "black"
           }
         ]
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "cta2Text",
+        "name": "cta2_Text",
         "value": "",
-        "label": "Second CTA Text",
+        "label": "First CTA Text",
         "description": "Text to be shown inside button."
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "cta2",
+        "name": "cta2_link",
         "value": "",
-        "label": "Second CTA Link",
+        "label": "First CTA Link",
         "description": "What link to open when clicking the button."
       },
       {
