@@ -4662,9 +4662,83 @@
           }
         ]
       },
+      {
+        "component": "select",
+        "name": "cta1_customBgColor",
+        "value": "",
+        "label": "First CTA Background Color",
+        "description": "Select First CTA background color. Select 'Custom Hexcode' to enter the custom color",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Gray",
+            "value": "bg-spectrum-gray-700"
+          },
+          {
+            "name": "Blue",
+            "value": "bg-spectrum-blue-700"
+          },
+          {
+            "name": "Green",
+            "value": "bg-spectrum-green-700"
+          },
+          {
+            "name": "Orange",
+            "value": "bg-spectrum-orange-700"
+          },
+          {
+            "name": "Red",
+            "value": "bg-spectrum-red-700"
+          },
+          {
+            "name": "Celery",
+            "value": "bg-spectrum-celery-700"
+          },
+          {
+            "name": "Chartreuse",
+            "value": "bg-spectrum-chartreuse-700"
+          },
+          {
+            "name": "Cyan",
+            "value": "bg-spectrum-cyan-700"
+          },
+          {
+            "name": "Fuchsia",
+            "value": "bg-spectrum-fuchsia-700"
+          },
+          {
+            "name": "Indigo",
+            "value": "bg-spectrum-indigo-700"
+          },
+          {
+            "name": "Magenta",
+            "value": "bg-spectrum-magenta-700"
+          },
+          {
+            "name": "Purple",
+            "value": "bg-spectrum-purple-700"
+          },
+          {
+            "name": "Seafoam",
+            "value": "bg-spectrum-seafoam-700"
+          },
+          {
+            "name": "Yellow",
+            "value": "bg-spectrum-yellow-700"
+          },
+          {
+            "name": "Adobe Red",
+            "value": "bg-non-spectrum-adobe-red"
+          },
+          {
+            "name": "Custom Hexcode",
+            "value": "custom-hexcode"
+          }
+        ]
+      },
        {
         "condition": {
-          "===": [{ "var": "cta1_Type" }, "custom"]
+          "===": [{ "var": "cta1_customBgColor" }, "custom-hexcode"]
         },
         "component": "text",
         "valueType": "string",
@@ -4736,9 +4810,86 @@
           }
         ]
       },
-       {
+      {
         "condition": {
           "===": [{ "var": "cta2_Type" }, "custom"]
+        },
+        "component": "select",
+        "name": "cta2_customBgColor",
+        "value": "",
+        "label": "Second CTA Background Color",
+        "description": "Select Second CTA background color. Select 'Custom Hexcode' to enter the custom color",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Gray",
+            "value": "bg-spectrum-gray-700"
+          },
+          {
+            "name": "Blue",
+            "value": "bg-spectrum-blue-700"
+          },
+          {
+            "name": "Green",
+            "value": "bg-spectrum-green-700"
+          },
+          {
+            "name": "Orange",
+            "value": "bg-spectrum-orange-700"
+          },
+          {
+            "name": "Red",
+            "value": "bg-spectrum-red-700"
+          },
+          {
+            "name": "Celery",
+            "value": "bg-spectrum-celery-700"
+          },
+          {
+            "name": "Chartreuse",
+            "value": "bg-spectrum-chartreuse-700"
+          },
+          {
+            "name": "Cyan",
+            "value": "bg-spectrum-cyan-700"
+          },
+          {
+            "name": "Fuchsia",
+            "value": "bg-spectrum-fuchsia-700"
+          },
+          {
+            "name": "Indigo",
+            "value": "bg-spectrum-indigo-700"
+          },
+          {
+            "name": "Magenta",
+            "value": "bg-spectrum-magenta-700"
+          },
+          {
+            "name": "Purple",
+            "value": "bg-spectrum-purple-700"
+          },
+          {
+            "name": "Seafoam",
+            "value": "bg-spectrum-seafoam-700"
+          },
+          {
+            "name": "Yellow",
+            "value": "bg-spectrum-yellow-700"
+          },
+          {
+            "name": "Adobe Red",
+            "value": "bg-non-spectrum-adobe-red"
+          },
+          {
+            "name": "Custom Hexcode",
+            "value": "custom-hexcode"
+          }
+        ]
+      },
+       {
+        "condition": {
+          "===": [{ "var": "cta2_customBgColor" }, "custom-hexcode"]
         },
         "component": "text",
         "valueType": "string",
