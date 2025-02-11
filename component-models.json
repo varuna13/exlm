@@ -4745,7 +4745,7 @@
         "name": "cta2_customHexCode",
         "value": "",
         "label": "Second CTA Custom Hexcode",
-        "description": "Enter the custom hex code, such as FFFFFF (without the # symbol)."
+        "description": "Enter the custom hex code, such as FFFFFF (without the # symbol). Please ensure to follow the Adobe style guides when selecting CTA Colors"
       },
        {
         "condition": {
