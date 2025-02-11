@@ -4641,7 +4641,7 @@
         "name": "cta1_Type",
         "value": "primary",
         "label": "First CTA Type",
-        "description": "",
+        "description": "'Primary' will render a filled blue CTA, 'Secondary' will render a white CTA with a black border and black text, 'Tertiary' will render a filled black CTA, and 'Custom' will render a CTA with a custom hex color background.",
         "valueType": "string",
         "options": [
           {
@@ -4652,7 +4652,7 @@
             "name": "Secondary",
             "value": "secondary"
           },
-           {
+          {
             "name": "Tertiary",
             "value": "tertiary"
           },
@@ -4739,7 +4739,7 @@
           }
         ]
       },
-       {
+      {
         "condition": {
           "===": [{ "var": "cta1_customBgColor" }, "custom-hexcode"]
         },
@@ -4750,7 +4750,7 @@
         "label": "First CTA Custom Hexcode",
         "description": "Enter the custom hex code, such as FFFFFF (without the # symbol). Please ensure to follow the Adobe style guides when selecting CTA Colors"
       },
-       {
+      {
         "condition": {
           "===": [{ "var": "cta1_Type" }, "custom"]
         },
@@ -4760,7 +4760,7 @@
         "value": "white",
         "label": "First CTA Text Color",
         "description": "Select the text color",
-         "options": [
+        "options": [
           {
             "name": "White",
             "value": "white"
@@ -4792,7 +4792,7 @@
         "name": "cta2_Type",
         "value": "primary",
         "label": "Second CTA Type",
-        "description": "",
+        "description": "'Primary' will render a filled blue CTA, 'Secondary' will render a white CTA with a black border and black text, 'Tertiary' will render a filled black CTA, and 'Custom' will render a CTA with a custom hex color background.",
         "valueType": "string",
         "options": [
           {
@@ -4803,7 +4803,7 @@
             "name": "Secondary",
             "value": "secondary"
           },
-           {
+          {
             "name": "Tertiary",
             "value": "tertiary"
           },
@@ -4890,7 +4890,7 @@
           }
         ]
       },
-       {
+      {
         "condition": {
           "===": [{ "var": "cta2_customBgColor" }, "custom-hexcode"]
         },
@@ -4901,7 +4901,7 @@
         "label": "Second CTA Custom Hexcode",
         "description": "Enter the custom hex code, such as FFFFFF (without the # symbol). Please ensure to follow the Adobe style guides when selecting CTA Colors"
       },
-       {
+      {
         "condition": {
           "===": [{ "var": "cta2_Type" }, "custom"]
         },
@@ -4911,7 +4911,7 @@
         "value": "white",
         "label": "Second CTA Text Color",
         "description": "Select the text color",
-         "options": [
+        "options": [
           {
             "name": "White",
             "value": "white"
