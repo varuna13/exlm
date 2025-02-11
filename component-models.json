@@ -4663,6 +4663,9 @@
         ]
       },
       {
+        "condition": {
+          "===": [{ "var": "cta1_Type" }, "custom"]
+        },
         "component": "select",
         "name": "cta1_customBgColor",
         "value": "",
