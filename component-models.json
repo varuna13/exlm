@@ -4670,7 +4670,7 @@
         "valueType": "string",
         "name": "cta1_customHexCode",
         "value": "",
-        "label": "Custom Hexcode",
+        "label": "First CTA Custom Hexcode",
         "description": "Enter the custom hex code, such as FFFFFF (without the # symbol)."
       },
        {
@@ -4714,7 +4714,7 @@
         "component": "select",
         "name": "cta2_Type",
         "value": "primary",
-        "label": "First CTA Type",
+        "label": "Second CTA Type",
         "description": "",
         "valueType": "string",
         "options": [
@@ -4744,7 +4744,7 @@
         "valueType": "string",
         "name": "cta2_customHexCode",
         "value": "",
-        "label": "Custom Hexcode",
+        "label": "Second CTA Custom Hexcode",
         "description": "Enter the custom hex code, such as FFFFFF (without the # symbol)."
       },
        {
@@ -4755,7 +4755,7 @@
         "valueType": "string",
         "name": "cta2_textColor",
         "value": "white",
-        "label": "First CTA Text Color",
+        "label": "Second CTA Text Color",
         "description": "Select the text color",
          "options": [
           {
