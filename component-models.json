@@ -284,9 +284,12 @@
         ]
       },
       {
+      
         "condition": {
-          "===": [{ "var": "cta1_customBgColor" }, "custom-hexcode"]
-        },
+          "and" : [
+  {"===" : [ { "var" : "cta1_customBgColor" }, "custom-hexcode" ]},
+  {"===" : [ { "var": "cta1_Type" }, "custom" ] }
+]},
         "component": "text",
         "valueType": "string",
         "name": "cta1_customHexCode",
@@ -436,8 +439,10 @@
       },
       {
         "condition": {
-          "===": [{ "var": "cta2_customBgColor" }, "custom-hexcode"]
-        },
+          "and" : [
+  {"===" : [ { "var" : "cta1_customBgColor" }, "custom-hexcode" ]},
+  {"===" : [ { "var": "cta1_Type" }, "custom" ] }
+]},
         "component": "text",
         "valueType": "string",
         "name": "cta2_customHexCode",
