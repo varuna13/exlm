@@ -2,6 +2,7 @@ import { div, h2, p } from '../../scripts/dom-helpers.js';
 import { createOptimizedPicture } from '../../scripts/lib-franklin.js';
 import { fetchLanguagePlaceholders, htmlToElement } from '../../scripts/scripts.js';
 import { fetchAuthorBio } from '../../scripts/utils/author-utils.js';
+import decorateCustomButtons from '../../scripts/utils/button-utils.js';
 
 let placeholders = {};
 try {
@@ -9,20 +10,6 @@ try {
 } catch (err) {
   // eslint-disable-next-line no-console
   console.error('Error fetching placeholders:', err);
-}
-
-export function decorateButton(button) {
-  const link = button.querySelector('a');
-  if (link) {
-    link.classList.add('button');
-    if (link.parentElement.tagName === 'EM') {
-      link.classList.add('secondary');
-    } else if (link.parentElement.tagName === 'STRONG') {
-      link.classList.add('primary');
-    }
-    return link;
-  }
-  return '';
 }
 
 /**
@@ -96,7 +83,7 @@ async function buildFeaturedContent(block, contentArray) {
     { class: 'description' },
     h2(contentInfo.contentTitle),
     p(contentDescription),
-    div({ class: 'cta' }, decorateButton(cta)),
+    div({ class: 'cta' }, decorateCustomButtons(cta)),
   );
   const authorContainer = div({ class: 'author-container' });
   const authorWrapper = div({ class: 'author-wrapper' });
