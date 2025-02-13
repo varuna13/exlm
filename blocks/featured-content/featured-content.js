@@ -1,4 +1,4 @@
-import { div, h2, p } from '../../scripts/dom-helpers.js';
+import { div } from '../../scripts/dom-helpers.js';
 import { createOptimizedPicture } from '../../scripts/lib-franklin.js';
 import { fetchLanguagePlaceholders, htmlToElement } from '../../scripts/scripts.js';
 import { fetchAuthorBio } from '../../scripts/utils/author-utils.js';
@@ -79,13 +79,13 @@ async function buildFeaturedContent(block, contentArray) {
   const contentDescription = desc.textContent || contentInfo.contentDescription.replace(/^SUMMARY: /, '');
   desc.parentElement.remove();
 
-  const contentDiv = `
+  const contentDiv = htmlToElement(`
   <div class="description">
     <h2>${contentInfo.contentTitle}</h2>
     <p>${contentDescription}</p>
     <div class="cta">${decorateCustomButtons(cta)}</div>
   </div>
-`;
+`);
   const authorContainer = div({ class: 'author-container' });
   const authorWrapper = div({ class: 'author-wrapper' });
   const authorHeader = div({ class: 'author-header' });
