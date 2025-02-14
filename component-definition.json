@@ -332,11 +332,11 @@
                   "cta1_Type": "primary",
                   "cta1_customBgColor": "bg-spectrum-gray-700",
                   "cta1_textColor": "white",
-                  "cta1_customHexCode": "000000",
+                  "cta1_customBgHexCode": "000000",
                   "cta2_Type": "primary",
                   "cta2_customBgColor": "bg-spectrum-gray-700",
                   "cta2_textColor": "white",
-                  "cta2_customHexCode": "000000",
+                  "cta2_customBgHexCode": "000000",
                   "customHexCode": "FFFFFF",
                   "classes": "light",
                   "dismissalTime": "sessionStorage"
@@ -628,11 +628,11 @@
                   "cta1_Type": "primary",
                   "cta1_customBgColor": "bg-spectrum-gray-700",
                   "cta1_textColor": "white",
-                  "cta1_customHexCode": "000000",
+                  "cta1_customBgHexCode": "000000",
                   "cta2_Type": "primary",
                   "cta2_customBgColor": "bg-spectrum-gray-700",
                   "cta2_textColor": "white",
-                  "cta2_customHexCode": "000000"
+                  "cta2_customBgHexCode": "000000"
                 }
               }
             }
@@ -722,7 +722,7 @@
                   "cta1_Type": "primary",
                   "cta1_customBgColor": "bg-spectrum-gray-700",
                   "cta1_textColor": "white",
-                  "cta1_customHexCode": "000000",
+                  "cta1_customBgHexCode": "000000",
                   "cta1_linkText": "Read Article"
                 }
               }
@@ -883,11 +883,11 @@
                   "cta1_Type": "primary",
                   "cta1_customBgColor": "bg-spectrum-gray-700",
                   "cta1_textColor": "white",
-                  "cta1_customHexCode": "000000",
+                  "cta1_customBgHexCode": "000000",
                   "cta2_Type": "primary",
                   "cta2_customBgColor": "bg-spectrum-gray-700",
                   "cta2_textColor": "white",
-                  "cta2_customHexCode": "000000"
+                  "cta2_customBgHexCode": "000000"
                 }
               }
             }
@@ -956,7 +956,7 @@
                   "cta1_Type": "primary",
                   "cta1_customBgColor": "bg-spectrum-gray-700",
                   "cta1_textColor": "white",
-                  "cta1_customHexCode": "000000",
+                  "cta1_customBgHexCode": "000000",
                   "cta1_linkText": "Manage profile",
                   "showProfileCard": true
                 }
@@ -1203,11 +1203,11 @@
                   "cta1_Type": "primary",
                   "cta1_customBgColor": "bg-spectrum-gray-700",
                   "cta1_textColor": "white",
-                  "cta1_customHexCode": "000000",
+                  "cta1_customBgHexCode": "000000",
                   "cta2_Type": "primary",
                   "cta2_customBgColor": "bg-spectrum-gray-700",
                   "cta2_textColor": "white",
-                  "cta2_customHexCode": "000000"
+                  "cta2_customBgHexCode": "000000"
                 }
               }
             }
