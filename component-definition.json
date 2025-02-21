@@ -8,7 +8,7 @@
           "title": "Button",
           "id": "button",
           "plugins": {
-            "xwalk": {
+            "xwalk": {fa
               "page": {
                 "resourceType": "core/franklin/components/button/v1/button",
                 "template": {}
@@ -355,7 +355,7 @@
                 "template": {
                   "name": "Article Marquee",
                   "model": "article-marquee",
-                  "fileReference": "/content/dam/exlm/Community_headshot_single.png"
+                  "classes": "marquee-straight"
                 }
               }
             }
