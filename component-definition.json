@@ -8,7 +8,7 @@
           "title": "Button",
           "id": "button",
           "plugins": {
-            "xwalk": {fa
+            "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/button/v1/button",
                 "template": {}
@@ -122,7 +122,8 @@
                   "article-marquee": {
                     "sling:resourceType": "core/franklin/components/block/v1/block",
                     "name": "Article Marquee",
-                    "model": "article-marquee"
+                    "model": "article-marquee",
+                    "classes": "marquee-straight"
                   }
                 }
               }
