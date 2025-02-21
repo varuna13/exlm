@@ -2125,14 +2125,15 @@
         "description": "Article marquee background shape",
         "valueType": "string",
         "options": [
+           {
+            "name": "Straight",
+            "value": "marquee-straight"
+          },
           {
             "name": "Curved",
             "value": "marquee-curved"
-          },
-          {
-            "name": "Straight",
-            "value": "marquee-straight"
           }
+         
         ]
       },
       {
