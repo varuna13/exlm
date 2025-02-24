@@ -60,6 +60,26 @@
   text-align: center;
 }
 
+.article-marquee.marquee-straight .author-info {
+  min-width: 30%;
+}
+
+.article-marquee.marquee-straight .author-info.adobe {
+  background-color: var(--spectrum-red-1400);
+}
+
+.article-marquee.marquee-straight .author-info.external {
+  background-color: var(--spectrum-gray-900);
+}
+
+.article-marquee .author-info .author-card .author-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
 .article-marquee .author-card {
   display: flex;
   flex-direction: column;
@@ -79,11 +99,18 @@
 }
 
 .article-marquee .author-info .author-card .author-image {
-  width: 75px;
-  height: 75px;
-  border-radius: 50px;
+  box-sizing: border-box;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
   overflow: hidden;
+  border: 2px solid var(--spectrum-gray-900);
   margin-bottom: 10px;
+  padding: 5px;
+}
+
+.article-marquee .author-info.external .author-card .author-image {
+  border: 2px solid var(--spectrum-gray-50);
 }
 
 .article-marquee .author-info .author-card .author-info-text .author-name {
@@ -250,11 +277,21 @@
     display: inline-flex;
     gap: 30px;
     width: auto;
-    margin-left: 200px;
+    margin-left: 124px;
+  }
+
+  .article-marquee .author-info .author-details > :only-child {
+    width: 100%;
+  }
+
+  .article-marquee.marquee-straight .author-info .author-details {
+    align-items: center;
+    margin-left: 0;
   }
 
   .article-marquee .author-card {
     margin-bottom: 0;
+    width: 50%;
   }
 
   .article-marquee .author-card .author-image {
@@ -276,18 +313,26 @@
     display: block;
     position: absolute;
     inset: 0 0 1px 50%;
-    background-color: var(--spectrum-indigo-1400);
+    background-color: var(--non-spectrum-bg);
   }
 
   .article-marquee-large-bg.adobe {
     background-color: var(--spectrum-red-1400);
+  }
+
+  .article-marquee-large-bg.external {
+    background-color: var(--spectrum-gray-900);
   }
 }
 
 /* Aricle Marquee background styles */
 
 .article-marquee-bg-container path:first-child {
-  fill: var(--spectrum-indigo-1400);
+  fill: var(--non-spectrum-bg);
+}
+
+.article-marquee-bg-container.external path:first-child {
+  fill: var(--spectrum-gray-900);
 }
 
 .article-marquee-bg-container.adobe path:first-child {
