@@ -138,7 +138,7 @@ async function createBreadcrumb(container) {
  */
 export default async function ArticleMarquee(block) {
   const [readTime, headingType] = block.querySelectorAll(':scope div > div');
-  const isStraightVariant = block.classList?.contains('marquee-straight');
+  const isCurvedVariant = block.classList?.contains('marquee-straight');
   block.textContent = '';
 
   let links = getMetadata('author-bio-page');
@@ -160,7 +160,7 @@ export default async function ArticleMarquee(block) {
           </div>
           <div class="author-info">
           ${
-            !isStraightVariant
+            isCurvedVariant
               ? `<div class="article-marquee-bg-container">
                  ${mobileSvg}
                  ${tabletSvg}
