@@ -138,7 +138,7 @@ async function createBreadcrumb(container) {
  */
 export default async function ArticleMarquee(block) {
   const [readTime, headingType] = block.querySelectorAll(':scope div > div');
-  const isCurvedVariant = block.classList?.contains('marquee-curved');
+  const isCurvedVariant = block.classList.contains('marquee-curved');
   block.textContent = '';
 
   let links = getMetadata('author-bio-page');
@@ -224,15 +224,13 @@ export default async function ArticleMarquee(block) {
           }
         });
 
-        if (isExternal) {
-          block.querySelector('.article-marquee-large-bg')?.classList.add('external');
-          block.querySelector('.article-marquee-bg-container')?.classList.add('external');
-          block.querySelector('.author-info')?.classList.add('external');
-        } else {
-          block.querySelector('.article-marquee-large-bg')?.classList.add('adobe');
-          block.querySelector('.article-marquee-bg-container')?.classList.add('adobe');
-          block.querySelector('.author-info')?.classList.add('adobe');
-        }
+        const classesToUpdate = ['.article-marquee-large-bg', '.article-marquee-bg-container', '.author-info'];
+
+        const classToAdd = isExternal ? 'external' : 'adobe';
+
+        classesToUpdate.forEach((selector) => {
+          block.querySelector(selector)?.classList.add(classToAdd);
+        });
       });
     }
   }
