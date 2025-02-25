@@ -138,7 +138,7 @@ async function createBreadcrumb(container) {
  */
 export default async function ArticleMarquee(block) {
   const [readTime, headingType] = block.querySelectorAll(':scope div > div');
-  const isCurvedVariant = block.classList?.contains('marquee-straight');
+  const isCurvedVariant = block.classList?.contains('marquee-curved');
   block.textContent = '';
 
   let links = getMetadata('author-bio-page');
