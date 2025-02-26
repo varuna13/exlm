@@ -316,7 +316,7 @@
   .article-marquee-large-bg {
     display: block;
     position: absolute;
-    inset: 0 0 1px 50%;
+    inset: 0 0 0 50%;
     background-color: var(--non-spectrum-bg);
   }
 
@@ -331,15 +331,15 @@
 
 /* Aricle Marquee background styles */
 
-.article-marquee-bg-container path:first-child {
+.article-marquee .author-info .article-marquee-bg-container path:first-child {
   fill: var(--non-spectrum-bg);
 }
 
-.article-marquee-bg-container.external path:first-child {
+.article-marquee .author-info.external .article-marquee-bg-container path:first-child {
   fill: var(--spectrum-gray-900);
 }
 
-.article-marquee-bg-container.adobe path:first-child {
+.article-marquee .author-info.adobe .article-marquee-bg-container path:first-child {
   fill: var(--spectrum-red-1400);
 }
 
